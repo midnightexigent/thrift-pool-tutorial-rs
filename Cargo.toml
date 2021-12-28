@@ -1,5 +1,5 @@
 [package]
-name = "thrift-tutorial-pool"
+name = "thrift-pool-tutorial"
 version = "0.1.0"
 edition = "2021"
 publish = false
