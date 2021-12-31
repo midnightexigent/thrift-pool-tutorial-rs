@@ -192,16 +192,19 @@ dependencies = [
 
 [[package]]
 name = "thrift-pool"
-version = "0.1.3"
+version = "1.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "773206ec7c0aaaad159ed0933ab55313906b06468b5fba47926e3998c8bdfb99"
 dependencies = [
  "r2d2",
  "thrift",
 ]
 
 [[package]]
-name = "thrift-tutorial-pool"
+name = "thrift-pool-tutorial"
 version = "0.1.0"
 dependencies = [
+ "r2d2",
  "thrift",
  "thrift-pool",
 ]

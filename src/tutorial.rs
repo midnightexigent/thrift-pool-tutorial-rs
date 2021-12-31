@@ -707,11 +707,9 @@ impl CalculatorPingArgs {
       if field_ident.field_type == TType::Stop {
         break;
       }
-      let field_id = field_id(&field_ident)?;
-      match field_id {
-        _ => {
-          i_prot.skip(field_ident.field_type)?;
-        },
+      let _field_id = field_id(&field_ident)?;
+      {
+        i_prot.skip(field_ident.field_type)?;
       };
       i_prot.read_field_end()?;
     }
@@ -743,11 +741,9 @@ impl CalculatorPingResult {
       if field_ident.field_type == TType::Stop {
         break;
       }
-      let field_id = field_id(&field_ident)?;
-      match field_id {
-        _ => {
-          i_prot.skip(field_ident.field_type)?;
-        },
+      let _field_id = field_id(&field_ident)?;
+      {
+        i_prot.skip(field_ident.field_type)?;
       };
       i_prot.read_field_end()?;
     }
@@ -1040,11 +1036,9 @@ impl CalculatorZipArgs {
       if field_ident.field_type == TType::Stop {
         break;
       }
-      let field_id = field_id(&field_ident)?;
-      match field_id {
-        _ => {
-          i_prot.skip(field_ident.field_type)?;
-        },
+      let _field_id = field_id(&field_ident)?;
+      {
+        i_prot.skip(field_ident.field_type)?;
       };
       i_prot.read_field_end()?;
     }
